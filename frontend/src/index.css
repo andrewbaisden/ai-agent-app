@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .chat-container {
+    @apply w-full h-96 flex flex-col;
+  }
+
+  .chat-messages {
+    @apply flex-1 overflow-y-auto p-4;
+  }
+
+  .message {
+    @apply flex mb-4;
+  }
+
+  .user-message {
+    @apply justify-end;
+  }
+
+  .agent-message {
+    @apply justify-start;
+  }
+
+  .message-avatar {
+    @apply flex-shrink-0 mr-2;
+  }
+
+  .avatar-placeholder {
+    @apply w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold;
+  }
+
+  .message-content {
+    @apply p-3 rounded-lg max-w-xs sm:max-w-sm md:max-w-md;
+  }
+
+  .user-message .message-content {
+    @apply bg-blue-500 text-white;
+  }
+
+  .agent-message .message-content {
+    @apply bg-gray-200 text-gray-800;
+  }
+
+  .chat-input-container {
+    @apply p-4 border-t border-gray-200;
+  }
+
+  .chat-input-group {
+    @apply flex;
+  }
+
+  .chat-input {
+    @apply flex-1 border border-gray-300 rounded-l-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  .chat-send-button {
+    @apply bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  .loading-dots:after {
+    @apply content-['...'] animate-pulse;
+  }
+
+  .project-image-placeholder {
+    @apply h-48 bg-gray-300 flex items-center justify-center text-gray-600 font-semibold;
+  }
+
+  .agent-avatar-placeholder {
+    @apply w-16 h-16 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold mx-auto;
+  }
+}
