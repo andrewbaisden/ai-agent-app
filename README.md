@@ -20,10 +20,10 @@ A portfolio website with AI agents powered by Groq LLM that can answer questions
 
 ## Installation
 
-### 1. Clone the repository
+### 1. Clone this repository
 
 ```shell
-git clone https://github.com/yourusername/ai-agent-app.git
+git clone https://github.com/andrewbaisden/ai-agent-app.git
 cd ai-agent-app
 ```
 
