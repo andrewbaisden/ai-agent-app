@@ -2,6 +2,8 @@
 
 A portfolio website with AI agents powered by Groq LLM that can answer questions about projects, skills, and provide research information.
 
+Read the freeCodeCamp article: [How to Build a Team of AI Agents for Your Website for Free Using Agno and Groq](https://www.freecodecamp.org/news/build-a-team-of-ai-agents-for-your-website-for-free/).
+
 ![AI Agent App](/img/ai-agent-app-home.png 'AI Agent App')
 
 ## Features
